@@ -1,0 +1,19 @@
+{
+  "name": "ai-site-factory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Site factory for AI-tool / niche affiliate sites — fully automated by Claude Code",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/site-1-aitools",
+    "build": "npm run build --workspace=apps/site-1-aitools",
+    "start": "npm run start --workspace=apps/site-1-aitools",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
