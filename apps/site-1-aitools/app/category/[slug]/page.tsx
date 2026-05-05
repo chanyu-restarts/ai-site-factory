@@ -6,6 +6,8 @@ import { CATEGORY_LABELS, type ToolCategory } from "@/lib/types";
 
 type Params = { slug: string };
 
+export const dynamicParams = false;
+
 export function generateStaticParams(): Params[] {
   return Object.keys(CATEGORY_LABELS).map((slug) => ({ slug }));
 }

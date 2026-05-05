@@ -6,6 +6,8 @@ import type { Tool } from "@/lib/types";
 
 type Params = { slug: string };
 
+export const dynamicParams = false;
+
 function parsePair(slug: string): [string, string] | null {
   const match = slug.match(/^(.+)-vs-(.+)$/);
   if (!match) return null;
