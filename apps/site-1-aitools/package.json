@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pin": "tsx --env-file=../../.env.local scripts/post-pinterest.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",
@@ -23,6 +24,8 @@
     "@types/react-dom": "^19.0.0",
     "tailwindcss": "^4.0.0",
     "@tailwindcss/postcss": "^4.0.0",
-    "postcss": "^8.4.49"
+    "postcss": "^8.4.49",
+    "tsx": "^4.19.0",
+    "dotenv": "^16.4.5"
   }
 }
