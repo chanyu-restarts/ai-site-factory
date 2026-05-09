@@ -36,3 +36,8 @@ next-env.d.ts
 .turbo
 
 .vercel
+
+# Browser test artifacts
+.playwright-mcp/
+test-*.png
+og-*-verify.png
