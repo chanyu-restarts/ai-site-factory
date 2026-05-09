@@ -3,6 +3,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { TOOLS, TOOLS_BY_SLUG } from "@/lib/data/tools";
 import { CATEGORY_LABELS } from "@/lib/types";
+import {
+  softwareApplicationSchema,
+  breadcrumbSchema,
+  jsonLdString,
+  siteUrl,
+} from "@/lib/schema";
 
 type Params = { slug: string };
 
@@ -46,8 +52,24 @@ export default async function ToolPage({
 
   const ctaUrl = `/go/${tool.slug}`;
 
+  const jsonLd = jsonLdString(
+    softwareApplicationSchema(tool),
+    breadcrumbSchema([
+      { name: "Home", url: `${siteUrl()}/` },
+      {
+        name: CATEGORY_LABELS[tool.category],
+        url: `${siteUrl()}/category/${tool.category}`,
+      },
+      { name: tool.name, url: `${siteUrl()}/tools/${tool.slug}` },
+    ]),
+  );
+
   return (
     <article className="space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
+      />
       <header className="space-y-3">
         <div className="flex items-center gap-2 text-sm text-[color:var(--color-muted)]">
           <Link href="/" className="hover:text-white">Tools</Link>

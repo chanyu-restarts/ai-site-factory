@@ -1,12 +1,21 @@
 import Link from "next/link";
 import { TOOLS } from "@/lib/data/tools";
 import { CATEGORY_LABELS, type ToolCategory } from "@/lib/types";
+import { itemListSchema, jsonLdString, siteUrl } from "@/lib/schema";
 
 export default function HomePage() {
   const categories = Object.keys(CATEGORY_LABELS) as ToolCategory[];
 
+  const jsonLd = jsonLdString(
+    itemListSchema("All AI Tools", `${siteUrl()}/`, TOOLS),
+  );
+
   return (
     <div className="space-y-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
+      />
       <section className="space-y-4">
         <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
           Find the right AI tool — fast.

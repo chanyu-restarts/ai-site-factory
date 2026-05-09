@@ -3,6 +3,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { TOOLS } from "@/lib/data/tools";
 import { CATEGORY_LABELS, type ToolCategory } from "@/lib/types";
+import {
+  itemListSchema,
+  breadcrumbSchema,
+  jsonLdString,
+  siteUrl,
+} from "@/lib/schema";
 
 type Params = { slug: string };
 
@@ -37,9 +43,22 @@ export default async function CategoryPage({
   if (!label) notFound();
 
   const items = TOOLS.filter((t) => t.category === category);
+  const url = `${siteUrl()}/category/${category}`;
+
+  const jsonLd = jsonLdString(
+    itemListSchema(`Best ${label} Tools`, url, items),
+    breadcrumbSchema([
+      { name: "Home", url: `${siteUrl()}/` },
+      { name: label, url },
+    ]),
+  );
 
   return (
     <div className="space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
+      />
       <header className="space-y-3">
         <div className="text-sm text-[color:var(--color-muted)]">
           <Link href="/" className="hover:text-white">Tools</Link>

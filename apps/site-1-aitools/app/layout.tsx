@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { organizationSchema, websiteSchema, jsonLdString } from "@/lib/schema";
 import "./globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
@@ -43,6 +46,12 @@ export default function RootLayout({
             crossOrigin="anonymous"
           />
         )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdString(organizationSchema(), websiteSchema()),
+          }}
+        />
       </head>
       <body className="min-h-screen antialiased" suppressHydrationWarning>
         <header className="border-b border-[color:var(--color-border)]">
@@ -73,6 +82,8 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pin": "tsx --env-file=../../.env.local scripts/post-pinterest.mjs"
+    "pin": "tsx --env-file=../../.env.local scripts/post-pinterest.mjs",
+    "indexnow": "tsx --env-file=../../.env.local scripts/indexnow-submit.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",
@@ -16,7 +17,9 @@
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.4",
     "lucide-react": "^0.460.0",
-    "@vercel/blob": "^0.27.0"
+    "@vercel/blob": "^0.27.0",
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

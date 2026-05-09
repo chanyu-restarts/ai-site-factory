@@ -3,6 +3,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { TOOLS, TOOLS_BY_SLUG } from "@/lib/data/tools";
 import type { Tool } from "@/lib/types";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  jsonLdString,
+  siteUrl,
+} from "@/lib/schema";
 
 type Params = { slug: string };
 
@@ -70,6 +76,22 @@ export default async function ComparePage({
 
   const aCta = `/go/${a.slug}`;
   const bCta = `/go/${b.slug}`;
+  const url = `${siteUrl()}/compare/${slug}`;
+  const headline = `${a.name} vs ${b.name} — Side-by-Side Comparison`;
+  const description = `Compare ${a.name} and ${b.name}: features, pricing, pros, and cons. Pick the right tool for your use case.`;
+
+  const jsonLd = jsonLdString(
+    articleSchema({
+      url,
+      headline,
+      description,
+      datePublished: new Date().toISOString(),
+    }),
+    breadcrumbSchema([
+      { name: "Home", url: `${siteUrl()}/` },
+      { name: `${a.name} vs ${b.name}`, url },
+    ]),
+  );
 
   const rows: Array<[string, string, string]> = [
     ["Tagline", a.tagline, b.tagline],
@@ -82,6 +104,10 @@ export default async function ComparePage({
 
   return (
     <article className="space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd }}
+      />
       <header className="space-y-2">
         <div className="text-sm text-[color:var(--color-muted)]">
           <Link href="/" className="hover:text-white">Tools</Link>
