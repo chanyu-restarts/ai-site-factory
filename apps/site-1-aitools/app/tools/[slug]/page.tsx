@@ -44,7 +44,7 @@ export default async function ToolPage({
     (t) => t.category === tool.category && t.slug !== tool.slug,
   ).slice(0, 6);
 
-  const ctaUrl = tool.affiliateUrl ?? tool.websiteUrl;
+  const ctaUrl = `/go/${tool.slug}`;
 
   return (
     <article className="space-y-12">

@@ -68,8 +68,8 @@ export default async function ComparePage({
   const b = TOOLS_BY_SLUG[bSlug];
   if (!a || !b) notFound();
 
-  const aCta = a.affiliateUrl ?? a.websiteUrl;
-  const bCta = b.affiliateUrl ?? b.websiteUrl;
+  const aCta = `/go/${a.slug}`;
+  const bCta = `/go/${b.slug}`;
 
   const rows: Array<[string, string, string]> = [
     ["Tagline", a.tagline, b.tagline],
