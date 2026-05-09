@@ -40,6 +40,8 @@ export default function HomePage() {
       {categories.map((category) => {
         const items = TOOLS.filter((t) => t.category === category);
         if (items.length === 0) return null;
+        const visible = items.slice(0, 6);
+        const remaining = items.length - visible.length;
         return (
           <section key={category} className="space-y-4">
             <div className="flex items-baseline justify-between">
@@ -48,11 +50,11 @@ export default function HomePage() {
                 href={`/category/${category}`}
                 className="text-sm text-[color:var(--color-muted)] hover:text-white"
               >
-                View all →
+                {remaining > 0 ? `View all ${items.length} →` : "View all →"}
               </Link>
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
-              {items.map((t) => (
+              {visible.map((t) => (
                 <Link
                   key={t.slug}
                   href={`/tools/${t.slug}`}
