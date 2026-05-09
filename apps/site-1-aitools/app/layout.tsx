@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
@@ -36,15 +35,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen antialiased" suppressHydrationWarning>
+      <head>
         {ADSENSE_CLIENT_ID && (
-          <Script
+          <script
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
             crossOrigin="anonymous"
-            strategy="beforeInteractive"
           />
         )}
+      </head>
+      <body className="min-h-screen antialiased" suppressHydrationWarning>
         <header className="border-b border-[color:var(--color-border)]">
           <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
             <a href="/" className="text-lg font-semibold tracking-tight">
