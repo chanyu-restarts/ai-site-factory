@@ -1,0 +1,128 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WhichAITool" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Tools" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Compare" [ref=e7] [cursor=pointer]:
+          - /url: /compare
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: /category
+  - main [ref=e9]:
+    - article [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - link "Tools" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e14]: /
+          - link "Video Generation" [ref=e15] [cursor=pointer]:
+            - /url: /category/video-gen
+        - heading "Hailuo / MiniMax" [level=1] [ref=e16]
+        - paragraph [ref=e17]: Chinese AI video powerhouse with strong character consistency.
+        - generic [ref=e18]:
+          - link "Visit Hailuo / MiniMax →" [ref=e19] [cursor=pointer]:
+            - /url: /go/hailuo
+          - generic [ref=e20]: Launched 2024 · freemium
+      - generic [ref=e21]:
+        - heading "Overview" [level=2] [ref=e22]
+        - paragraph [ref=e23]: MiniMax's Hailuo produces video with excellent prompt adherence and character consistency. Often picked as top performer in benchmarks.
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - heading "Pros" [level=2] [ref=e26]
+          - list [ref=e27]:
+            - listitem [ref=e28]:
+              - generic [ref=e29]: +
+              - generic [ref=e30]: Excellent prompt adherence
+            - listitem [ref=e31]:
+              - generic [ref=e32]: +
+              - generic [ref=e33]: Strong character fidelity
+            - listitem [ref=e34]:
+              - generic [ref=e35]: +
+              - generic [ref=e36]: Affordable
+        - generic [ref=e37]:
+          - heading "Cons" [level=2] [ref=e38]
+          - list [ref=e39]:
+            - listitem [ref=e40]:
+              - generic [ref=e41]: −
+              - generic [ref=e42]: Server-load queue delays
+            - listitem [ref=e43]:
+              - generic [ref=e44]: −
+              - generic [ref=e45]: Chinese-first UX
+      - generic [ref=e46]:
+        - heading "Pricing" [level=2] [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - heading "Free" [level=3] [ref=e51]
+              - generic [ref=e52]: Free
+            - paragraph [ref=e53]: Limited credits
+          - generic [ref=e55]:
+            - heading "Standard" [level=3] [ref=e56]
+            - generic [ref=e57]: $9.99/mo
+          - generic [ref=e59]:
+            - heading "Premium" [level=3] [ref=e60]
+            - generic [ref=e61]: $29.99/mo
+      - generic [ref=e62]:
+        - heading "Key Features" [level=2] [ref=e63]
+        - generic [ref=e64]:
+          - generic [ref=e65]: Character consistency
+          - generic [ref=e66]: Image-to-video
+          - generic [ref=e67]: Subject reference
+          - generic [ref=e68]: API
+      - generic [ref=e69]:
+        - heading "Best For" [level=2] [ref=e70]
+        - generic [ref=e71]:
+          - generic [ref=e72]: character-driven content
+          - generic [ref=e73]: consistent subjects
+          - generic [ref=e74]: budget production
+      - generic [ref=e75]:
+        - heading "Alternatives in Video Generation" [level=2] [ref=e76]
+        - generic [ref=e77]:
+          - link "Compare Hailuo / MiniMax vs Runway" [ref=e78] [cursor=pointer]:
+            - /url: /compare/hailuo-vs-runway
+            - generic [ref=e79]: Compare
+            - generic [ref=e80]: Hailuo / MiniMax vs Runway
+          - link "Compare Hailuo / MiniMax vs Pika" [ref=e81] [cursor=pointer]:
+            - /url: /compare/hailuo-vs-pika
+            - generic [ref=e82]: Compare
+            - generic [ref=e83]: Hailuo / MiniMax vs Pika
+          - link "Compare Hailuo / MiniMax vs Sora" [ref=e84] [cursor=pointer]:
+            - /url: /compare/hailuo-vs-sora
+            - generic [ref=e85]: Compare
+            - generic [ref=e86]: Hailuo / MiniMax vs Sora
+          - link "Compare Hailuo / MiniMax vs Veo" [ref=e87] [cursor=pointer]:
+            - /url: /compare/hailuo-vs-veo
+            - generic [ref=e88]: Compare
+            - generic [ref=e89]: Hailuo / MiniMax vs Veo
+          - link "Compare Hailuo / MiniMax vs Kling" [ref=e90] [cursor=pointer]:
+            - /url: /compare/hailuo-vs-kling
+            - generic [ref=e91]: Compare
+            - generic [ref=e92]: Hailuo / MiniMax vs Kling
+          - link "Compare Hailuo / MiniMax vs Luma Dream Machine" [ref=e93] [cursor=pointer]:
+            - /url: /compare/hailuo-vs-luma-dream-machine
+            - generic [ref=e94]: Compare
+            - generic [ref=e95]: Hailuo / MiniMax vs Luma Dream Machine
+      - generic [ref=e96]:
+        - heading "Try Hailuo / MiniMax" [level=2] [ref=e97]
+        - paragraph [ref=e98]: Visit the official site to start. We may earn a commission on links — pricing is unchanged for you.
+        - link "Go to Hailuo / MiniMax →" [ref=e99] [cursor=pointer]:
+          - /url: /go/hailuo
+  - contentinfo [ref=e100]:
+    - generic [ref=e101]:
+      - navigation [ref=e102]:
+        - link "About" [ref=e103] [cursor=pointer]:
+          - /url: /about
+        - link "How we review" [ref=e104] [cursor=pointer]:
+          - /url: /how-we-review
+        - link "Affiliate disclosure" [ref=e105] [cursor=pointer]:
+          - /url: /affiliate-disclosure
+        - link "Privacy" [ref=e106] [cursor=pointer]:
+          - /url: /privacy
+        - link "Contact" [ref=e107] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e108]:
+        - generic [ref=e109]: © 2026 WhichAITool. Independent reviews. Some links earn affiliate commission.
+        - generic [ref=e110]: Built with Next.js
+  - alert [ref=e111]

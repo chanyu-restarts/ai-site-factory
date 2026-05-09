@@ -1,0 +1,81 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WhichAITool" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Tools" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Compare" [ref=e7] [cursor=pointer]:
+          - /url: /compare
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: /category
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - link "Tools" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - text: /Category
+        - heading "Best Research Tools" [level=1] [ref=e14]
+        - paragraph [ref=e15]: 7 curated Research tools with honest pricing, real features, and head-to-head comparisons.
+      - generic [ref=e16]:
+        - link "Perplexity freemium AI-native search and answer engine." [ref=e17] [cursor=pointer]:
+          - /url: /tools/perplexity
+          - generic [ref=e18]:
+            - heading "Perplexity" [level=2] [ref=e19]
+            - generic [ref=e20]: freemium
+          - paragraph [ref=e21]: AI-native search and answer engine.
+        - link "You.com freemium AI search with multi-mode (research/agent/code)." [ref=e22] [cursor=pointer]:
+          - /url: /tools/you-com
+          - generic [ref=e23]:
+            - heading "You.com" [level=2] [ref=e24]
+            - generic [ref=e25]: freemium
+          - paragraph [ref=e26]: AI search with multi-mode (research/agent/code).
+        - link "Phind freemium AI search built for developers." [ref=e27] [cursor=pointer]:
+          - /url: /tools/phind
+          - generic [ref=e28]:
+            - heading "Phind" [level=2] [ref=e29]
+            - generic [ref=e30]: freemium
+          - paragraph [ref=e31]: AI search built for developers.
+        - link "Genspark freemium AI agent search with sparkpages and deep research." [ref=e32] [cursor=pointer]:
+          - /url: /tools/genspark
+          - generic [ref=e33]:
+            - heading "Genspark" [level=2] [ref=e34]
+            - generic [ref=e35]: freemium
+          - paragraph [ref=e36]: AI agent search with sparkpages and deep research.
+        - link "Consensus freemium AI search across academic papers — evidence-grade answers." [ref=e37] [cursor=pointer]:
+          - /url: /tools/consensus-app
+          - generic [ref=e38]:
+            - heading "Consensus" [level=2] [ref=e39]
+            - generic [ref=e40]: freemium
+          - paragraph [ref=e41]: AI search across academic papers — evidence-grade answers.
+        - link "Elicit freemium Automate literature review with AI." [ref=e42] [cursor=pointer]:
+          - /url: /tools/elicit
+          - generic [ref=e43]:
+            - heading "Elicit" [level=2] [ref=e44]
+            - generic [ref=e45]: freemium
+          - paragraph [ref=e46]: Automate literature review with AI.
+        - link "Scite paid Smart citations for academic research." [ref=e47] [cursor=pointer]:
+          - /url: /tools/scite-ai
+          - generic [ref=e48]:
+            - heading "Scite" [level=2] [ref=e49]
+            - generic [ref=e50]: paid
+          - paragraph [ref=e51]: Smart citations for academic research.
+  - contentinfo [ref=e52]:
+    - generic [ref=e53]:
+      - navigation [ref=e54]:
+        - link "About" [ref=e55] [cursor=pointer]:
+          - /url: /about
+        - link "How we review" [ref=e56] [cursor=pointer]:
+          - /url: /how-we-review
+        - link "Affiliate disclosure" [ref=e57] [cursor=pointer]:
+          - /url: /affiliate-disclosure
+        - link "Privacy" [ref=e58] [cursor=pointer]:
+          - /url: /privacy
+        - link "Contact" [ref=e59] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e60]:
+        - generic [ref=e61]: © 2026 WhichAITool. Independent reviews. Some links earn affiliate commission.
+        - generic [ref=e62]: Built with Next.js
+  - alert [ref=e63]

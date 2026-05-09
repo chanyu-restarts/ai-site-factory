@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WhichAITool" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Tools" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Compare" [ref=e7] [cursor=pointer]:
+          - /url: /compare
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: /category
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - link "Tools" [ref=e13] [cursor=pointer]:
+            - /url: /
+          - text: /Category
+        - heading "Best Audio & Voice Tools" [level=1] [ref=e14]
+        - paragraph [ref=e15]: 8 curated Audio & Voice tools with honest pricing, real features, and head-to-head comparisons.
+      - generic [ref=e16]:
+        - link "ElevenLabs freemium The de facto standard for AI voices." [ref=e17] [cursor=pointer]:
+          - /url: /tools/elevenlabs
+          - generic [ref=e18]:
+            - heading "ElevenLabs" [level=2] [ref=e19]
+            - generic [ref=e20]: freemium
+          - paragraph [ref=e21]: The de facto standard for AI voices.
+        - link "Descript freemium Edit video and audio by editing text." [ref=e22] [cursor=pointer]:
+          - /url: /tools/descript
+          - generic [ref=e23]:
+            - heading "Descript" [level=2] [ref=e24]
+            - generic [ref=e25]: freemium
+          - paragraph [ref=e26]: Edit video and audio by editing text.
+        - link "Suno freemium AI music generation with vocals — text to full song." [ref=e27] [cursor=pointer]:
+          - /url: /tools/suno
+          - generic [ref=e28]:
+            - heading "Suno" [level=2] [ref=e29]
+            - generic [ref=e30]: freemium
+          - paragraph [ref=e31]: AI music generation with vocals — text to full song.
+        - link "Udio freemium AI music gen with the most natural vocal phrasing." [ref=e32] [cursor=pointer]:
+          - /url: /tools/udio
+          - generic [ref=e33]:
+            - heading "Udio" [level=2] [ref=e34]
+            - generic [ref=e35]: freemium
+          - paragraph [ref=e36]: AI music gen with the most natural vocal phrasing.
+        - link "Murf freemium Studio-quality AI voiceover for business and learning." [ref=e37] [cursor=pointer]:
+          - /url: /tools/murf
+          - generic [ref=e38]:
+            - heading "Murf" [level=2] [ref=e39]
+            - generic [ref=e40]: freemium
+          - paragraph [ref=e41]: Studio-quality AI voiceover for business and learning.
+        - link "Play.ht freemium AI voice generation with emotional control and ultra-low latency." [ref=e42] [cursor=pointer]:
+          - /url: /tools/play-ht
+          - generic [ref=e43]:
+            - heading "Play.ht" [level=2] [ref=e44]
+            - generic [ref=e45]: freemium
+          - paragraph [ref=e46]: AI voice generation with emotional control and ultra-low latency.
+        - link "Speechify freemium Listen to anything — turn text into natural voice." [ref=e47] [cursor=pointer]:
+          - /url: /tools/speechify
+          - generic [ref=e48]:
+            - heading "Speechify" [level=2] [ref=e49]
+            - generic [ref=e50]: freemium
+          - paragraph [ref=e51]: Listen to anything — turn text into natural voice.
+        - link "WellSaid Labs paid Studio-grade AI voiceovers for enterprise." [ref=e52] [cursor=pointer]:
+          - /url: /tools/wellsaid
+          - generic [ref=e53]:
+            - heading "WellSaid Labs" [level=2] [ref=e54]
+            - generic [ref=e55]: paid
+          - paragraph [ref=e56]: Studio-grade AI voiceovers for enterprise.
+  - contentinfo [ref=e57]:
+    - generic [ref=e58]:
+      - navigation [ref=e59]:
+        - link "About" [ref=e60] [cursor=pointer]:
+          - /url: /about
+        - link "How we review" [ref=e61] [cursor=pointer]:
+          - /url: /how-we-review
+        - link "Affiliate disclosure" [ref=e62] [cursor=pointer]:
+          - /url: /affiliate-disclosure
+        - link "Privacy" [ref=e63] [cursor=pointer]:
+          - /url: /privacy
+        - link "Contact" [ref=e64] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e65]:
+        - generic [ref=e66]: © 2026 WhichAITool. Independent reviews. Some links earn affiliate commission.
+        - generic [ref=e67]: Built with Next.js
+  - alert [ref=e68]

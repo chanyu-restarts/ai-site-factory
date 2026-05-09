@@ -18,7 +18,7 @@ export const TOOLS: Tool[] = [
     features: ["Chat", "Voice mode", "Image generation", "Code interpreter", "Custom GPTs", "Memory"],
     pros: ["Massive ecosystem", "Best-in-class image gen", "Strong reasoning models"],
     cons: ["Hallucinations on niche topics", "Pro tier expensive"],
-    websiteUrl: "https://chat.openai.com",
+    websiteUrl: "https://chatgpt.com",
     launchYear: 2022,
     bestFor: ["general chat", "writing", "research", "coding helper"],
   },

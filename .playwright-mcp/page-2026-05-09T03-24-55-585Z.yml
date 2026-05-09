@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WhichAITool" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Tools" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Compare" [ref=e7] [cursor=pointer]:
+          - /url: /compare
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: /category
+  - main [ref=e9]:
+    - article [ref=e10]:
+      - heading "Affiliate Disclosure" [level=1] [ref=e11]
+      - paragraph [ref=e12]: "Last updated: May 2026"
+      - generic [ref=e13]:
+        - paragraph [ref=e14]:
+          - strong [ref=e15]: WhichAITool participates in affiliate programs.
+          - text: When you click an outbound link to a third-party AI tool from this site and subsequently make a purchase or sign up for a paid plan, we may receive a commission from that vendor at no additional cost to you.
+        - heading "How this affects our reviews" [level=2] [ref=e16]
+        - paragraph [ref=e17]: Affiliate earnings do not influence which tools we list, the order in which they appear, or the content of our reviews. We rate tools based on documented features, public pricing, and hands-on testing where possible.
+        - paragraph [ref=e18]: Some tools we cover do not offer affiliate programs at all — we still list and review them on the same basis as those that do.
+        - heading "Programs we participate in" [level=2] [ref=e19]
+        - list [ref=e20]:
+          - listitem [ref=e21]: Impact.com partner programs
+          - listitem [ref=e22]: PartnerStack partner programs
+          - listitem [ref=e23]: Direct affiliate programs operated by individual AI tool vendors
+          - listitem [ref=e24]: Display advertising networks (where applicable)
+        - heading "FTC compliance" [level=2] [ref=e25]
+        - paragraph [ref=e26]: "This disclosure is provided in compliance with the U.S. Federal Trade Commission's 16 CFR Part 255: Guides Concerning the Use of Endorsements and Testimonials in Advertising, and equivalent regulations in the EU, UK, Canada, Australia, and Japan."
+        - heading "Questions?" [level=2] [ref=e27]
+        - paragraph [ref=e28]:
+          - text: If you have any questions about this disclosure, please reach us via the
+          - link "contact page" [ref=e29] [cursor=pointer]:
+            - /url: /contact
+          - text: .
+  - contentinfo [ref=e30]:
+    - generic [ref=e31]:
+      - navigation [ref=e32]:
+        - link "About" [ref=e33] [cursor=pointer]:
+          - /url: /about
+        - link "How we review" [ref=e34] [cursor=pointer]:
+          - /url: /how-we-review
+        - link "Affiliate disclosure" [ref=e35] [cursor=pointer]:
+          - /url: /affiliate-disclosure
+        - link "Privacy" [ref=e36] [cursor=pointer]:
+          - /url: /privacy
+        - link "Contact" [ref=e37] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e38]:
+        - generic [ref=e39]: © 2026 WhichAITool. Independent reviews. Some links earn affiliate commission.
+        - generic [ref=e40]: Built with Next.js
+  - alert [ref=e41]

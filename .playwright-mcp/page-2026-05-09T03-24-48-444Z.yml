@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WhichAITool" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Tools" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Compare" [ref=e7] [cursor=pointer]:
+          - /url: /compare
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: /category
+  - main [ref=e9]:
+    - article [ref=e10]:
+      - heading "Contact" [level=1] [ref=e11]
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: The best way to reach us is by email. We read every message and try to reply within a few business days.
+        - generic [ref=e14]:
+          - generic [ref=e15]: Email us
+          - link "hello@whichaitool.com" [ref=e16] [cursor=pointer]:
+            - /url: mailto:hello@whichaitool.com
+        - heading "What to write about" [level=2] [ref=e17]
+        - list [ref=e18]:
+          - listitem [ref=e19]:
+            - strong [ref=e20]: Suggest an AI tool
+            - text: we should cover. Include the URL and a one-line pitch.
+          - listitem [ref=e21]:
+            - strong [ref=e22]: Flag a correction
+            - text: — pricing change, feature update, or factual error.
+          - listitem [ref=e23]:
+            - strong [ref=e24]: Partnership inquiries
+            - text: — affiliate program onboarding, sponsorship, content collaborations.
+          - listitem [ref=e25]:
+            - strong [ref=e26]: Privacy requests
+            - text: — data deletion or disclosure requests under GDPR / CCPA.
+        - heading "What not to write about" [level=2] [ref=e27]
+        - paragraph [ref=e28]: Please don't send pitches asking us to remove a competitor, manipulate rankings, or post sponsored content disguised as editorial. We won't respond to those.
+  - contentinfo [ref=e29]:
+    - generic [ref=e30]:
+      - navigation [ref=e31]:
+        - link "About" [ref=e32] [cursor=pointer]:
+          - /url: /about
+        - link "How we review" [ref=e33] [cursor=pointer]:
+          - /url: /how-we-review
+        - link "Affiliate disclosure" [ref=e34] [cursor=pointer]:
+          - /url: /affiliate-disclosure
+        - link "Privacy" [ref=e35] [cursor=pointer]:
+          - /url: /privacy
+        - link "Contact" [ref=e36] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e37]:
+        - generic [ref=e38]: © 2026 WhichAITool. Independent reviews. Some links earn affiliate commission.
+        - generic [ref=e39]: Built with Next.js
+  - alert [ref=e40]

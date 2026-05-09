@@ -42,18 +42,18 @@ export default function HomePage() {
                 View all →
               </Link>
             </div>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
               {items.map((t) => (
                 <Link
                   key={t.slug}
                   href={`/tools/${t.slug}`}
-                  className="group rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-bg-2)] p-5 transition hover:border-[color:var(--color-accent)]"
+                  className="group flex flex-col rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-bg-2)] p-5 transition hover:border-[color:var(--color-accent)]"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="text-lg font-semibold group-hover:text-[color:var(--color-accent-2)]">
                       {t.name}
                     </h3>
-                    <span className="rounded-full border border-[color:var(--color-border)] px-2 py-0.5 text-xs uppercase tracking-wide text-[color:var(--color-muted)]">
+                    <span className="rounded-full border border-[color:var(--color-border)] px-2 py-0.5 text-xs uppercase tracking-wide text-[color:var(--color-muted)] shrink-0">
                       {t.pricingModel}
                     </span>
                   </div>

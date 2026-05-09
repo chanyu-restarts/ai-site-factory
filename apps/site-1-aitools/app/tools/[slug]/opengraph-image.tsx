@@ -14,9 +14,10 @@ export function generateStaticParams(): { slug: string }[] {
 export default async function Image({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const tool = TOOLS_BY_SLUG[params.slug];
+  const { slug } = await params;
+  const tool = TOOLS_BY_SLUG[slug];
   if (!tool) {
     return new ImageResponse(
       (
@@ -58,7 +59,14 @@ export default async function Image({
             color: "#a1a1aa",
           }}
         >
-          <span style={{ color: "#22d3ee", fontSize: 36 }}>◆</span>
+          <div
+            style={{
+              width: 28,
+              height: 28,
+              background: "#22d3ee",
+              transform: "rotate(45deg)",
+            }}
+          />
           <span>WhichAITool</span>
         </div>
 

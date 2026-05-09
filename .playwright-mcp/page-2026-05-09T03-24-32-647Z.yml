@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "WhichAITool" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e5]:
+        - link "Tools" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - link "Compare" [ref=e7] [cursor=pointer]:
+          - /url: /compare
+        - link "Categories" [ref=e8] [cursor=pointer]:
+          - /url: /category
+  - main [ref=e9]:
+    - article [ref=e10]:
+      - heading "How We Review AI Tools" [level=1] [ref=e11]
+      - paragraph [ref=e12]: Our editorial methodology, in detail.
+      - generic [ref=e13]:
+        - heading "Selection" [level=2] [ref=e14]
+        - paragraph [ref=e15]: "A tool gets listed when it meets at least one of these criteria:"
+        - list [ref=e16]:
+          - listitem [ref=e17]: It is the recognized leader in a category that readers ask about
+          - listitem [ref=e18]: It has demonstrable, distinct positioning vs incumbents
+          - listitem [ref=e19]: It has a viable free or trial tier so we can verify claims
+          - listitem [ref=e20]: It has an active product team and recent shipping cadence
+        - paragraph [ref=e21]: Tools that are abandoned, scammy, undocumented, or duplicate an existing entry without differentiation are excluded.
+        - heading "Evaluation criteria" [level=2] [ref=e22]
+        - paragraph [ref=e23]: "Every tool entry is built from the same six dimensions:"
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - strong [ref=e26]: Capabilities
+            - text: — what the tool actually does, not what its marketing claims.
+          - listitem [ref=e27]:
+            - strong [ref=e28]: Pricing transparency
+            - text: — published tiers, hidden limits, and total cost-of-ownership.
+          - listitem [ref=e29]:
+            - strong [ref=e30]: UX quality
+            - text: — speed, polish, and friction.
+          - listitem [ref=e31]:
+            - strong [ref=e32]: Ecosystem
+            - text: — integrations, API surface, community, and exportability.
+          - listitem [ref=e33]:
+            - strong [ref=e34]: Trust signals
+            - text: — funding, team transparency, terms of service, and data handling.
+          - listitem [ref=e35]:
+            - strong [ref=e36]: Best-fit use cases
+            - text: — who specifically should choose it.
+        - heading "Comparison structure" [level=2] [ref=e37]
+        - paragraph [ref=e38]: Comparison pages put two tools next to each other on the dimensions above. We do not declare a universal winner — most categories have several legitimate “best” tools depending on what you optimize for.
+        - heading "Ranking and ordering" [level=2] [ref=e39]
+        - paragraph [ref=e40]: When tools are listed in a category, the default order is curation-driven, not alphabetical or by affiliate payout. The most established or distinctly positioned tools appear first.
+        - heading "Updates and corrections" [level=2] [ref=e41]
+        - paragraph [ref=e42]:
+          - text: AI tools change pricing, ship features, and pivot positioning frequently. We re-validate listed tools regularly. If you spot an inaccuracy, please send it via the
+          - link "contact page" [ref=e43] [cursor=pointer]:
+            - /url: /contact
+          - text: and we will correct or remove the entry promptly.
+        - heading "Conflict of interest" [level=2] [ref=e44]
+        - paragraph [ref=e45]:
+          - text: We earn affiliate commissions from some — not all — of the tools we list. This is fully disclosed on the
+          - link "affiliate disclosure page" [ref=e46] [cursor=pointer]:
+            - /url: /affiliate-disclosure
+          - text: .
+        - paragraph [ref=e47]: "To prevent revenue from corrupting reviews, we follow these rules:"
+        - list [ref=e48]:
+          - listitem [ref=e49]: Whether a tool offers an affiliate program is never a listing criterion.
+          - listitem [ref=e50]: Higher commissions never buy higher placement.
+          - listitem [ref=e51]: We list non-affiliate tools (such as fully open-source projects) on equal footing.
+          - listitem [ref=e52]: Negative coverage of an affiliate partner is published when warranted.
+        - heading "Use of AI in this site" [level=2] [ref=e53]
+        - paragraph [ref=e54]: We use AI to help research, draft, translate, and summarize content. All published entries are human-reviewed for accuracy before going live. Entries that could not be adequately verified are not published.
+  - contentinfo [ref=e55]:
+    - generic [ref=e56]:
+      - navigation [ref=e57]:
+        - link "About" [ref=e58] [cursor=pointer]:
+          - /url: /about
+        - link "How we review" [ref=e59] [cursor=pointer]:
+          - /url: /how-we-review
+        - link "Affiliate disclosure" [ref=e60] [cursor=pointer]:
+          - /url: /affiliate-disclosure
+        - link "Privacy" [ref=e61] [cursor=pointer]:
+          - /url: /privacy
+        - link "Contact" [ref=e62] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e63]:
+        - generic [ref=e64]: © 2026 WhichAITool. Independent reviews. Some links earn affiliate commission.
+        - generic [ref=e65]: Built with Next.js
+  - alert [ref=e66]

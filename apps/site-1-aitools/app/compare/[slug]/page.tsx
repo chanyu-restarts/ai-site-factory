@@ -96,8 +96,8 @@ export default async function ComparePage({
         </p>
       </header>
 
-      <section className="overflow-hidden rounded-lg border border-[color:var(--color-border)]">
-        <table className="w-full text-sm">
+      <section className="overflow-x-auto rounded-lg border border-[color:var(--color-border)]">
+        <table className="w-full min-w-[600px] text-sm">
           <thead className="bg-[color:var(--color-bg-2)]">
             <tr>
               <th className="p-3 text-left font-medium w-40"></th>
