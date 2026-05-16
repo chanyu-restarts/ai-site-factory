@@ -1,0 +1,30 @@
+{
+  "name": "video-factory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automated video generation for tool intro Shorts (YouTube/TikTok/X)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "tsx scripts/render.mjs",
+    "render:all": "tsx scripts/render-all.mjs",
+    "render-compare": "tsx scripts/render-compare.mjs",
+    "youtube-auth": "node --env-file=../../.env.local scripts/get-youtube-refresh-token.mjs",
+    "upload-youtube": "node --env-file=../../.env.local --import tsx scripts/upload-youtube.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.459",
+    "@remotion/cli": "4.0.459",
+    "@remotion/renderer": "4.0.459",
+    "googleapis": "^171.4.0",
+    "msedge-tts": "^2.0.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.459"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
