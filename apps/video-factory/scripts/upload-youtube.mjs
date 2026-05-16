@@ -51,7 +51,7 @@ async function loadTool(slug) {
   return { tool: t, categoryLabel: CATEGORY_LABELS[t.category] ?? t.category };
 }
 
-function loadTracker() {
+export function loadTracker() {
   if (!existsSync(TRACKER_PATH)) return [];
   try {
     return JSON.parse(readFileSync(TRACKER_PATH, "utf-8"));
@@ -60,9 +60,11 @@ function loadTracker() {
   }
 }
 
-function saveTracker(records) {
+export function saveTracker(records) {
   writeFileSync(TRACKER_PATH, JSON.stringify(records, null, 2));
 }
+
+export { TRACKER_PATH };
 
 function getOAuthClient() {
   const clientId = process.env.YOUTUBE_CLIENT_ID;
@@ -117,7 +119,7 @@ async function uploadVideo({ filePath, title, description, tags, privacyStatus }
   return res.data;
 }
 
-async function uploadShort({ slug, privacy }) {
+export async function uploadShort({ slug, privacy }) {
   const filePath = resolve(OUTPUT_DIR, `${slug}.mp4`);
   if (!existsSync(filePath))
     fail(`MP4 not found: ${filePath}. Run 'npm run render -- --slug=${slug}' first.`);
@@ -140,7 +142,7 @@ async function uploadShort({ slug, privacy }) {
   return { key: `short:${slug}`, title: meta.title, video: result };
 }
 
-async function uploadCompare({ slugA, slugB, privacy }) {
+export async function uploadCompare({ slugA, slugB, privacy }) {
   const dirName = `${slugA}-vs-${slugB}`;
   const filePath = resolve(OUTPUT_DIR, `${dirName}.mp4`);
   if (!existsSync(filePath)) {
@@ -205,7 +207,10 @@ async function main() {
   console.log(`  Tracker updated: ${TRACKER_PATH}`);
 }
 
-main().catch((err) => {
-  console.error("\nFatal:", err.errors ?? err.message ?? err);
-  process.exit(1);
-});
+// Only run main() when this file is executed directly, not when imported
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((err) => {
+    console.error("\nFatal:", err.errors ?? err.message ?? err);
+    process.exit(1);
+  });
+}

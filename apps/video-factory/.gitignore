@@ -1,5 +1,8 @@
 node_modules/
-output/
+# output/ — track MP4s and tracker for GitHub Actions; ignore other artifacts
+output/*
+!output/*.mp4
+!output/posted-videos.json
 public/audio/
 *.log
 .cache/
