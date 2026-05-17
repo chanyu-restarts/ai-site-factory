@@ -45,12 +45,7 @@ async function loadTools() {
   return { TOOLS, CATEGORY_LABELS };
 }
 
-async function renderOne({ tool, categoryLabel, bundled, noAudio }) {
-  let audioFile;
-  if (!noAudio) {
-    audioFile = await generateNarration(tool.slug);
-  }
-
+async function renderOne({ tool, categoryLabel, bundled, audioFile }) {
   const inputProps = {
     slug: tool.slug,
     name: tool.name,
@@ -115,12 +110,33 @@ async function main() {
     return;
   }
 
-  console.log(`Bundling Remotion project (one-time)...`);
+  console.log(`Queue: ${queue.length} tool(s)\n`);
+
+  // Phase 1: pre-generate all TTS audio so they exist in public/audio/
+  // BEFORE the Remotion bundle snapshots that directory.
+  const audioReady = new Map();
+  if (!noAudio) {
+    console.log(`[Phase 1/3] Generating narration audio for ${queue.length} tool(s)...`);
+    for (const tool of queue) {
+      try {
+        const audioFile = await generateNarration(tool.slug);
+        audioReady.set(tool.slug, audioFile);
+      } catch (err) {
+        console.error(`  TTS FAILED for ${tool.slug}: ${err.message ?? err}`);
+      }
+    }
+    console.log(`  Audio ready: ${audioReady.size} / ${queue.length}\n`);
+  }
+
+  // Phase 2: bundle once, with all audio files now present in public/audio/
+  console.log(`[Phase 2/3] Bundling Remotion project (one-time)...`);
   const bundled = await bundle({
     entryPoint: resolve(ROOT, "src/index.ts"),
     webpackOverride: (cfg) => cfg,
   });
-  console.log(`Queue: ${queue.length} tool(s)\n`);
+
+  // Phase 3: render each tool using the bundled output (audio resolved at render time)
+  console.log(`\n[Phase 3/3] Rendering ${queue.length} video(s)...`);
 
   let done = 0;
   let failed = 0;
@@ -131,7 +147,8 @@ async function main() {
     const idx = ++done;
     console.log(`\n[${idx}/${queue.length}] ${tool.slug} (${tool.name})`);
     try {
-      const out = await renderOne({ tool, categoryLabel, bundled, noAudio });
+      const audioFile = noAudio ? undefined : audioReady.get(tool.slug);
+      const out = await renderOne({ tool, categoryLabel, bundled, audioFile });
       console.log(`  -> ${out}`);
     } catch (err) {
       failed++;
