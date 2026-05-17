@@ -1,9 +1,11 @@
 name: YouTube Daily Render & Upload
 
 on:
-  schedule:
-    # 14:00 UTC = 23:00 JST every day
-    - cron: '0 14 * * *'
+  # Daily cron paused 2026-05-17 while character video format is being implemented.
+  # Re-enable by uncommenting the schedule block below once character system MVP is ready.
+  # schedule:
+  #   # 14:00 UTC = 23:00 JST every day
+  #   - cron: '0 14 * * *'
   workflow_dispatch:
     inputs:
       max:
