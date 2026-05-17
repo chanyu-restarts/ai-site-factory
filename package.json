@@ -11,6 +11,9 @@
     "dev": "npm run dev --workspace=apps/site-1-aitools",
     "build": "npm run build --workspace=apps/site-1-aitools",
     "start": "npm run start --workspace=apps/site-1-aitools",
+    "dev:site2": "npm run dev --workspace=apps/site-2-claudecode-news",
+    "build:site2": "npm run build --workspace=apps/site-2-claudecode-news",
+    "start:site2": "npm run start --workspace=apps/site-2-claudecode-news",
     "lint": "npm run lint --workspaces --if-present"
   },
   "engines": {
