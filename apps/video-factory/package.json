@@ -8,6 +8,8 @@
     "render": "tsx scripts/render.mjs",
     "render:all": "tsx scripts/render-all.mjs",
     "render-compare": "tsx scripts/render-compare.mjs",
+    "narrate:short": "tsx scripts/narrate-short-dialogue.mjs",
+    "render:short": "tsx scripts/render-short-dialogue.mjs",
     "youtube-auth": "node --env-file=../../.env.local scripts/get-youtube-refresh-token.mjs",
     "upload-youtube": "node --env-file=../../.env.local --import tsx scripts/upload-youtube.mjs",
     "upload:all": "node --env-file=../../.env.local --import tsx scripts/upload-all.mjs"
