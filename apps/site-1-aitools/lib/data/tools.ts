@@ -777,6 +777,22 @@ export const TOOLS: Tool[] = [
     bestFor: ["frontend devs", "designers", "Vercel users"],
   },
   {
+    slug: "roblox-gui-maker",
+    name: "Roblox GUI Maker",
+    tagline: "Prompt-based Roblox Studio GUI and Lua starter code generator.",
+    description:
+      "Roblox GUI Maker helps Roblox creators turn interface ideas into structured GUI layouts and Lua starter code that can be adapted inside Roblox Studio.",
+    category: "code-ai",
+    pricingModel: "free",
+    pricing: [{ name: "Free", priceUsd: "free" }],
+    features: ["Roblox GUI prompts", "Lua starter code", "Interface prototyping", "Studio-ready structure"],
+    pros: ["Focused on Roblox UI workflows", "Fast prompt-to-layout iteration", "Free to use"],
+    cons: ["Roblox-specific", "Generated code still needs developer review"],
+    websiteUrl: "https://robloxguimaker.dev/",
+    launchYear: 2026,
+    bestFor: ["Roblox creators", "game UI prototypes", "Lua UI starter code"],
+  },
+  {
     slug: "lovable",
     name: "Lovable",
     tagline: "Build full-stack apps from a prompt.",
