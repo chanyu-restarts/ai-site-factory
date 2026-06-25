@@ -379,6 +379,22 @@ export const TOOLS: Tool[] = [
     bestFor: ["Notion-centric teams"],
   },
   {
+    slug: "remio",
+    name: "Remio",
+    tagline: "Local-first AI memory and personal knowledge base.",
+    description:
+      "Remio parses files, webpages, recordings, emails, messages, images, and notes into local indexes and vectors, so users can retrieve focused personal context instead of repeatedly scanning folders or loading whole documents into prompts.",
+    category: "productivity",
+    pricingModel: "freemium",
+    pricing: [{ name: "Free", priceUsd: "free", notes: "Paid plans available" }],
+    features: ["Local-first memory", "Multi-format parsing", "Personal knowledge base", "Vector retrieval", "Desktop app"],
+    pros: ["Keeps personal context local", "Works across files and communication sources", "Reduces repeated file scanning and prompt bloat"],
+    cons: ["Requires desktop app install", "Best after indexing accumulated personal context"],
+    websiteUrl: "https://remio.ai/",
+    launchYear: 2024,
+    bestFor: ["personal knowledge bases", "document context", "AI memory"],
+  },
+  {
     slug: "grammarly",
     name: "Grammarly",
     tagline: "Writing assistant with generative AI baked in.",
